@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest 
 
     steps:
-      - name: echo tset
-        run: echo "hello world!"
+      - name: echo dev
+        run: echo "dev hello world!"
 
   clone:
     runs-on: ubuntu-latest
