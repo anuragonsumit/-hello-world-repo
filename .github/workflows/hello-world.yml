@@ -13,5 +13,15 @@ jobs:
       - name: echo tset
         run: echo "hello world!"
 
+  clone:
+    runs-on: ubuntu-latest
+    needs: hello-job
+    
+    steps:
+      - name: checkout
+        uses: Actions/checkout@v4
+
+        
+
 
 
