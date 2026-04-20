@@ -1,17 +1,17 @@
-name: Dev Hello World
+name: Test3 Hello World
 run-name: ${{  github.actor }} is testing out Github Actions
 on:
   workflow_dispatch:
-  push:
+  pull_request:  
     branches:
-      - main
+      - "*"
 jobs:
   hello-job:
     runs-on: ubuntu-latest 
 
     steps:
-      - name: echo dev
-        run: echo "dev hello world!"
+      - name: echo Test
+        run: echo "Test hello world!"
 
   clone:
     runs-on: ubuntu-latest
